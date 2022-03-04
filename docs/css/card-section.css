@@ -1,0 +1,85 @@
+.card-section .first-block > h1 {
+    /* max-width: 350px; */
+    font-size: clamp(var(--section-headers-min-size), 2.2vw, var(--section-headers-max-size));
+}
+
+
+.card-section .second-block {
+    width: 100%;
+    margin-top: var(--second-block-top-margin);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    place-items: center;
+  }
+  
+  @media (min-width: 300px) {
+    .card-section .second-block {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+
+.card-section .second-block .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 500px;
+    padding: 1.5rem;
+    border-radius: var(--slighly-rounded);
+}
+
+.card-section .second-block .card:hover {
+    background-color: #fff;
+    box-shadow: var(--card-shadow);
+}
+
+.card-section .second-block .card .card-footer > button:hover {
+    background-color: var(--primary) ;
+    color: #fff;
+}
+
+.card-section .second-block .card .card-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card-section .second-block .card .card-header > span.material-icons {
+    background-color: var(--primary);
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem;
+    border-radius: var(--slighly-rounded);
+}
+
+.card-section .second-block .card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card-section .second-block .card .card-body > h4 {
+    font-size: clamp(var(--card-title-min-size), 2.2vw, var(--card-title-max-size));
+}
+
+.card-section .second-block .card .card-body > p {
+    text-align: left;
+    color: var(--gray-2);
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.card-section .second-block .card .card-footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card-section .second-block .card .card-footer > button {
+    background-color: var(--gray-4);
+    color: var(--gray-2);
+    text-transform: capitalize;
+    border-radius: var(--slighly-rounded) ;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}

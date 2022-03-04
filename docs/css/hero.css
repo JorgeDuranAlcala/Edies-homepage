@@ -1,0 +1,100 @@
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--slighly-rounded);
+}
+
+
+.hero .second-block {
+    width: 100%;
+}
+
+.hero .first-block > h1 {
+    /* max-width: 350px; */
+    font-size: clamp(1rem, 2.2vw, 3rem);
+}
+
+.hero .first-block > h1 > span {
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 4vmin;
+}
+
+.hero .third-block .card {
+    min-width: 290px;
+    max-width: 350px;
+}
+
+.hero .third-block .card {
+    display: flex;
+    flex-direction: column;
+    gap: 4vmin;
+}
+
+.hero .third-block .card h4 {
+    font-size: clamp(1rem, 2.2vw, 3rem);
+}
+
+.hero .third-block .card p {
+    text-align: left;
+    /* line-break: anywhere; */
+    color: var(--gray-2);
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+}
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3vmin;
+}
+
+.join-container > span {
+    font-size: 0.8rem;
+    color: var(--gray-3);
+}
+
+.join-container > .input-box {
+    display: flex;
+}
+
+.input-box > input {
+    flex: 0.8;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    color: var(--gray-4);
+    background-color: var(--gray-6);
+    border-radius: var(--slighly-rounded) 0 0 var(--slighly-rounded);
+}
+
+.input-box > input::placeholder {
+    color: var(--gray-4);
+}
+
+.input-box > button {
+    flex: 0.2;
+    border: none;
+    padding: 0 1rem;
+    background-color: var(--primary);
+    text-transform: capitalize;
+    border-radius: var(--slighly-rounded) ;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+    .hero .first-block {
+        padding-left: var(--hero-padding);
+    }
+    
+    .hero .third-block {
+        padding-left: var(--hero-padding);
+    }
+  }

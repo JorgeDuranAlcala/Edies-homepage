@@ -1,0 +1,92 @@
+/* .good-design-section .second-block {
+    width: 100%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    place-items: center;
+} */
+
+.good-design-section .second-block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-top:var(--second-block-top-margin);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.good-design-section {
+    padding: 1rem;
+}
+  
+ /*  @media (min-width: 300px) {
+    .good-design-section .second-block {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  } */
+
+  .good-design-section .second-block .design-card {
+      /* min-width: 300px;
+      max-width: 500px; */
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    
+    .good-design-section .second-block .design-card .design-card__body > span {
+      font-weight: 300;
+      font-size: 0.9rem;
+      color: var(--gray-3);
+    }
+
+  .good-design-section .second-block .design-card .design-card__body > h4 {
+      font-weight: 500;
+      font-size: clamp(18px, 2vw, 24px);
+  }
+
+  .good-design-section .second-block .design-card > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--slighly-rounded);
+  }
+
+  .good-design-section .third-block {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .good-design-section .third-block > button {
+    border: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    font-size: clamp(18px, 2vw, 14px);
+    color: var(--primary);
+    background: inherit;
+    cursor: pointer;
+  }
+
+  .good-design-section .third-block > button:hover {
+    background-color: #dbecf5;
+    border-radius: var(--slighly-rounded);
+  }
+
+  @media (min-width: 800px) {
+      .good-design-section .second-block .design-card:nth-child(even) {
+          margin-top: 12rem;
+        }
+
+        .good-design-section .third-block {
+          margin-top: 20vmin;
+        }
+    }
+
+
+  
